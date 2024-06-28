@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+
 }
 
 html, body {
@@ -54,9 +55,13 @@ h1 {
     text-shadow: 0 0 10px #ff0000, /* Neon green glow */
                  0 0 20px #ff0000, /* Larger glow */
                  0 0 30px #ff0000; /* Even larger glow */
-    font-size: 32px;
+    font-size: 50px;
 
-    padding: 20px;
+
+}
+
+nav {
+    width: 100%;
 }
 
 h5 {
@@ -65,6 +70,8 @@ h5 {
     text-shadow: 1px 1px 50px red, 0 0 1em rgb(255, 0, 0), 0 0 0.2em blue;
     font-size: 26px;
     cursor: pointer;
+    margin-bottom: 10px;
+
 }
 
 h5:hover {
@@ -78,4 +85,37 @@ h6 {
     font-size: 20px;
     font-weight: 100;
     line-height: 30px;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    position: relative;
+
+}
+
+.main-panel {
+    width: 90%;
+    height: 70%;
+    background-color: rgba(255, 0, 0, 0.158);
+    border-radius: 20px;
+    border: 1px solid red;
+    -webkit-box-shadow: 0px 0px 50px 5px rgb(255, 0, 0);
+-moz-box-shadow: 0px 0px 50px 5px rgba(255,0,0,1);
+box-shadow: 0px 0px 50px 5px rgba(255, 0, 0, 0.397);
+}
+
+.lower-ray {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    height: 15%;
+    background-color: rgba(255, 0, 0, 0.075);
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+    filter: blur(100px);
+    -webkit-box-shadow: 0px 0px 50px 5px rgb(255, 0, 0);
+    -moz-box-shadow: 0px 0px 50px 5px rgba(255,0,0,1);
+    box-shadow: 0px 0px 50px 5px rgba(255, 0, 0, 0.397);
+
+
 }
