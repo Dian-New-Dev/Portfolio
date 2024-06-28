@@ -1,0 +1,40 @@
+Projeto Portfolio.
+
+Problemas:
+- O que comunicar?
+	- projetos feitos
+		- sites criados
+		- elementos criados
+		- páginas feitas
+		- desafios do FEM cumpridos
+		- serviços feitos no Fiverr/99Freelas
+		- disposição e sede de aprender
+
+	- diferenciais
+		- disposição a trabalhar por menos;
+		- capacidade de auto-aprendizado;
+		- 
+
+	- algo sobre mim que me destaque ao empregador
+		- maturidade
+		- autodidata
+		- experiência acadêmica 
+
+
+
+
+- Que temática visual?
+	- cyberpunk
+	- neon
+	- futurista
+	- minimalista
+
+- Estrutura
+	- Sem header ou topbar
+	- Pontinhos laterais mostrando seções
+	- Cada seção terá o tamanho do vieport
+	- Rolagem terá o tamanho do viewport
+	- Seções
+		- Hero: 
+		- Menu de projetos
+		- Sobre mim

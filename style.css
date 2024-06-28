@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background-image: url('images/alley-red.png');
+    background-size: 120%;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+}
+
+@font-face {
+    font-family: Neon Future;
+    src: url(fonts/Neon\ Future.ttf);
+}
+
+@font-face {
+    font-family: Futuristic Armour;
+    src: url(fonts/Futuristic\ Armour.otf);
+}
+
+@font-face {
+    font-family: Techno;
+    src: url(fonts/TechnoCharmDemoVersionRegular-ALaZm.otf);
+}
+
+header {
+    width: 40%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header * {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 70%;
+}
+
+h1 {
+    font-family: Neon Future, sans-serif;
+    color: #ffffff; /* Set text color to white */
+    text-shadow: 0 0 10px #ff0000, /* Neon green glow */
+                 0 0 20px #ff0000, /* Larger glow */
+                 0 0 30px #ff0000; /* Even larger glow */
+    font-size: 32px;
+
+    padding: 20px;
+}
+
+h5 {
+    font-family: Futuristic Armour;
+    color: #ff0000;
+    text-shadow: 1px 1px 50px red, 0 0 1em rgb(255, 0, 0), 0 0 0.2em blue;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+h5:hover {
+    text-shadow: 1px 1px 50px blue, 0 0 1.5em rgb(255, 0, 0), 0 0 0.2em blue;
+
+}
+
+h6 {
+    font-family: Roboto;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 30px;
+}
