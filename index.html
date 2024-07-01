@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -25,23 +26,129 @@
 
     <main>
 
-        <section class="main-panel">
-            <div class="text">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum deleniti, saepe vero voluptates adipisci inventore sequi. Ex, atque maiores maxime et non, consectetur vel odio, ducimus qui itaque ullam nobis! Exercitationem placeat vel sed delectus, consequuntur eum beatae impedit quos optio. Minus illo nisi animi aspernatur libero, velit nam in, architecto veritatis illum enim, magnam iusto? Alias libero, illo similique, exercitationem quae veritatis aliquid, soluta quisquam sed eius debitis magnam porro esse dignissimos. Unde, blanditiis fuga! Nisi maiores minus optio non, ex quae sunt temporibus hic! Vel labore, modi dicta mollitia at amet rerum veniam, placeat error deserunt laudantium earum.</p>
-            </div>
+        <canvas id="canvas" class="canvas"></canvas>
+
+        <section id="main-panel" class="main-panel">
+
+                <div id="projetos" class="projetos">
+                    <div class="upper">
+                        <div class="h2-container">
+                            <h2 id="h2-projetos"></h2>
+                        </div>
+
+                        <div class="h3-container">
+                            <h3 id="h3-projetos"></h3>
+                            <ul>
+                                <li class="li-projetos"></li>
+                                <li class="li-projetos"></li>
+                                <li class="li-projetos"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="flexbox">
+                        <div class="left-wrapper">
+                            <div class="left-buttons">
+                                <h4 class="h4-projetos"></h4> 
+                                <p class="p-projetos"></p>
+                            </div>
+    
+                            <div class="left-buttons">
+                                <h4 class="h4-projetos"></h4> 
+                                <p class="p-projetos"></p>
+                            </div>
+    
+                            <div class="left-buttons">
+                                <h4 class="h4-projetos"></h4> 
+                                <p class="p-projetos"></p>
+                            </div>
+                        </div>
+    
+                        <div class="right-wrapper">
+                            <a id="preview-link" href="" target="_blank"><img id="preview" class="preview" src="" alt="Preview de projeto"></a>
+                            
+                            <div class="setas">
+                                <p class="arrows"> < </p>
+                                <p class="arrows"> > </p>
+                            </div>
+    
+                        </div>
+
+                        <div id="bandeira"></div>
+                    </div>
+
+                </div>
+                <div id="sobre" class="sobre">
+
+                    <div class="top-wrapper">
+                        <div class="h2-container">
+                            <h2 id="h2-sobre"></h2>
+                        </div>
+
+                        <div class="h3-container">
+                            <h3 class="h5-sobre"></h3>
+                            <h3 class="h5-sobre"></h3>
+                        </div>
+                        
+
+
+                    </div>
+
+                    <div class="bottom-wrapper">
+                        <div class="bottom-cell">
+                            <h4 class="h4-sobre"></h4>
+                            <p class="p-sobre"></p>
+                        </div>
+
+                        <div class="bottom-cell">
+                            <h4 class="h4-sobre"></h4>
+                            <p class="p-sobre"></p>
+                        </div>
+
+                        <div class="bottom-cell">
+                            <h4 class="h4-sobre"></h4>
+                            <p class="p-sobre"></p>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="links">
+                        <a target="_blank" href="https://github.com/Dian-New-Dev"><img src="images/github-icon.png" alt="Link para meu github"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/diego-antunes-339648293/"><img src="images/linkedin.png" alt="Link para meu linkedin"></a>
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5567991592199&text=Ol%C3%A1,%20seja%20bem%20vindo!%20Caso%20tenha%20interesse%20em%20adquirir%20uma%20Landing%20Page%20para%20o%20seu%20neg%C3%B3cio,%20ou%20tenha%20d%C3%BAvidas%20sobre%20meus%20servi%C3%A7os,%20sinta-se%20livre%20para%20mandar%20uma%20mensagem.%20Responderei%20o%20quanto%20antes!"><img src="images/whatsapp.png" alt="Link para meu whatsapp"></a>
+                    </div>
+
+
+
+
+                </div>
             
             
 
         </section>
 
-        <div class="lower-ray">
-        </div>
+        <!-- <div id="lower-ray" class="lower-ray">
+        </div> -->
 
     </main>
+
+    <audio id="ambiance" src="audio/alley-ambiance.mp3"></audio>
+    <audio id="hover" src="audio/hover.mp3"></audio>
+    <audio id="screen-show-sound" src="audio/screen-on.mp3"></audio>
+    <audio id="screen-close-sound" src="audio/screen-off.mp3"></audio>
+
+
     
 </body>
 <script src="content.js"></script>
 <script src="onload.js"></script>
 <script src="insertOnLoad.js"></script>
+<script src="showPanel.js"></script>
+<script src="canvas.js"></script>
+<script src="audio.js"></script>
+<script src="mostrar-sobre.js" ></script>
+<script src="mostrar-projetos.js"></script>
 
 </html>
