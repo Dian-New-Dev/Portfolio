@@ -34,6 +34,8 @@ function esconderProjetos() {
 }
 
 function mostrarTipoDeProjeto(conteudoAMostrar) {
+
+    
     for (let i = 0; i < pProjetosArray.length; i++) {
         if (conteudoAMostrar === pProjetosArray[i]) {
             pProjetosArray[i].style.display = 'block';

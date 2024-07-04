@@ -1,7 +1,7 @@
 const hero = {
     h1: 'Desenvolvedor Web, Programador, Aprendiz',
     h6: 'Bem-vindo ao meu portfolio.',
-    ancoras: ['Início', 'Projetos', 'Sobre Mim'],
+    ancoras: ['Projetos', 'Sobre Mim'],
 }
 
 const projetos = {
@@ -15,7 +15,7 @@ const projetos = {
     p: ['Snippets reutilizáveis criados por mim.', 'Páginas com propósitos simples, em torno de resolver algum problema pequeno.', 'O foco central de meu aprendizado. Designs originais, inspirados por templates gratuitos.'],
     
     //elementos
-    elementos: ['images/previews/elem1.png'],
+    elementos: ['images/previews/elem0.png'],
     elementosLink: [''],
 
     //páginas únicas:
@@ -33,7 +33,7 @@ const projetos = {
 const sobre = {
     h2: 'SOBRE MIM',
     h5A: 'Ex-docente universitário em Ciência Política, doutor em Ciência Política pela UFRGS.',
-    h5B: 'Problemas de saúde me forçaram a abandonar minha carreira acadêmica, deasfio que abraço como oportunidade de buscar uma transição de carreira, rumo ao desenvolvimento web.',
+    h5B: 'Problemas de saúde me forçaram a abandonar o mundo acadêmico, deasfio que abraço como oportunidade de buscar uma transição de carreira, rumo ao desenvolvimento web.',
     h4: ['Diferencial', 'Modus Operandi', 'Lema'],
     p: ['Maturidade e capazidade de pesquisa e aprendizado autodidata contínuos advindos do mundo acadêmico.', 'Aliar aprendizado teórico (estudos de documentaçao, práticas tutoriais) com experiência prática (99Freelas, serviços autônomos locais) como preparo para uma vaga junior.', 'Sintaxe se aprende em dias, lógica se absorve em meses, pensamento crítico e resolutivo se desenvolve continuamente e humildade para aprender se cultiva todos os dias.'],
     foto: 'images/foto.png'

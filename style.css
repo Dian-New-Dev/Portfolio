@@ -1,23 +1,72 @@
 * {
     box-sizing: border-box;
+    /* border: 1px dotted yellow; */
 
 }
 
 html, body {
     margin: 0;
     padding: 0;
+
+
+    height: 100%;
+}
+
+html {
+
     width: 100%;
     background-image: url('images/alley-red.png');
     background-size: 120%;
     background-position: top;
 }
 
+@media (max-width: 700px) {
+    html {
+        position: relative;
+        background-size: 450%;
+    }
+
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    html {
+        position: relative;
+        background-size: 200%;
+    }
+
+}
+
 body {
 
-    height: 100vh;
+
     display: flex;
-    overflow: hidden;
+        width: 100%;
+
 }
+
+@media (max-width: 900px) {
+    body {
+        position: absolute;
+        width: 200%;
+        left: 0;
+        top: 0;
+        transition: left 0.7s ease;
+
+    }
+
+}
+
+@media (min-width: 900px) and (max-width: 1350px) {
+    html {
+        background-size: 200%;
+        background-color: rgba(0, 0, 0, 0.733);
+        background-blend-mode: multiply;
+
+    }
+
+}
+
+
 
 @font-face {
     font-family: Neon Future;
@@ -42,6 +91,32 @@ header {
     justify-content: space-around;
 }
 
+@media (max-width: 400px) {
+    header {
+padding: 10px;
+    }
+
+}
+
+@media (min-width: 401px) and (max-width: 900px) {
+    header {
+        /* position: absolute;
+        width: 100%; */
+        width: 50%;
+    }
+
+}
+
+
+
+@media (min-width: 900px) and (max-width: 1350px) {
+    header {
+        width: 30%;
+        padding: 20px;
+
+    }
+}
+
 header * {
     margin: 0;
     padding: 0;
@@ -52,6 +127,18 @@ main {
     height: 100%;
 }
 
+@media (max-width: 900px) {
+    main {
+
+
+        width: 50%;
+        overflow: hidden;
+    }
+
+}
+
+
+
 h1 {
     font-family: Neon Future, sans-serif;
     color: #e0cece; /* Set text color to white */
@@ -60,6 +147,19 @@ h1 {
                  0 0 30px #ff0000; /* Even larger glow */
     font-size: 50px;
 }
+
+@media (max-width: 900px) {
+    h1 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1350px) {
+    h1 {
+        font-size: 28px;
+    }
+}
+    
 
 
 nav {
@@ -123,7 +223,7 @@ main {
 .main-panel {
     display: none;
     width: 90%;
-    height: 70%;
+    height: 90%; 
     background-color: rgba(255, 0, 0, 0.158);
     border-radius: 20px;
     border: 1px solid red;
@@ -131,19 +231,16 @@ main {
     -moz-box-shadow: 0px 0px 50px 5px rgba(255,0,0,1);
     box-shadow: 0px 0px 50px 5px rgba(255, 0, 0, 0.397);
     z-index: 20;
-    /* background-image: url('images/pattern4.png');
-    background-size: 10%;
-    background-blend-mode: multiply;
-    background-position: 50% 50%;
-    position: relative; */
 
 }
 
 .show-stuff {
     display: block;
     transform-origin: bottom;
-    transition: transform 0.3s ease, width 0.3s ease, background-position 1s ease;
+    transition: transform 0.3s ease, width 0.3s ease;
 }
+
+
 
 .canvas {
     position: absolute;
@@ -169,11 +266,25 @@ main {
     height: 100%;
 }
 
+@media (max-width: 600px) {
+    .sobre {
+    overflow: scroll;
+    }
+}
+
 .top-wrapper {
     display: flex;
     width: 100%;
     border-bottom: 1px solid #ff0000;
 }
+
+@media (min-width: 900px) and (max-width: 1499px) {
+    .top-wrapper {
+        background-color: #ff000059;
+        border-radius: 20px;
+    }
+}
+
 
 h2 {
     font-family: Futuristic Armour;
@@ -204,17 +315,43 @@ h4 {
         -1px 0 0 black, 
         0 -1px 0 black; /* The color of the outline */
         font-size: 22px;
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
 
 }
 
+@media (max-width: 600px) {
+    h4 {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1350px) {
+    h4 {
+        font-size: 18px;
+    }
+}
+
+
+
 .h2-container {
+
     clip-path: polygon(25% 0%, 100% 0, 100% 50%, 75% 100%, 0 100%, 0% 50%);
     background-color: #ff000059;
-    width: 600px;
+    width: 20%;
     text-align: center;
     padding: 50px 10px;
     display: grid;
     place-content: center;
+}
+
+@media (max-width: 1499px) {
+    .h2-container {
+
+        display: none;
+
+    }
 }
 
 h3 {
@@ -225,19 +362,62 @@ h3 {
 
 }
 
+@media (max-width: 900px) {
+    h3 {
+
+        font-size: 16px;
+        margin: 0;
+        margin-bottom: 5px;
+
+    
+    }
+}
+
+@media (max-width: 1499px) {
+    h3 {
+
+        color: rgb(253, 213, 213);
+
+    
+    }
+}
+
 .h3-container {
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    width: 80%;
 
+}
+
+@media (max-width: 900px) {
+    .h3-container {
+        padding: 20px;
+
+        width: 100%;
+    
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1350px) {
+    .h3-container {
+        padding: 5px;
+    
+    }
 }
 
 .bottom-wrapper {
     display: flex;
     justify-content: center;
     padding: 5% 0px;
+}
+
+@media (max-width: 600px) {
+    .bottom-wrapper {
+        display: block;
+
+    }
 }
 
 .bottom-cell {
@@ -249,12 +429,28 @@ h3 {
     margin: 0px 5px;
 }
 
+@media (max-width: 600px) {
+    .bottom-cell {
+        width: 100%;
+        padding: 5px;
+
+    }
+}
+
 main p {
     font-family: Roboto;
     color: rgb(255, 211, 211);
     font-weight: 300;
     line-height: 25px;
     
+}
+
+@media (max-width: 600px) {
+    main p {
+
+        line-height: 20px;
+        
+    }
 }
 
 .links {
@@ -277,6 +473,13 @@ main p {
 .links img {
     width: 50px;
 }
+
+@media (max-width: 700px) {
+    .links img {
+        width: 25px;
+    }
+
+}
 .projetos {
     width: 100%;
     height: 100%;
@@ -290,11 +493,40 @@ main p {
     width: 100%;
 }
 
+@media (max-width: 1499px) {
+    .upper {
+
+        background-color: #ff000059;
+        border-radius: 20px;
+    
+
+    }
+}
+
 li {
     font-family: Roboto;
     color: rgb(255, 211, 211);
     font-weight: 300;
     line-height: 25px;
+    font-size: 16px;
+}
+
+@media (max-width: 900px) {
+    li {
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width: 900px) and (max-width: 1350px) {
+    li {
+        font-family: Roboto;
+        color: rgb(255, 211, 211);
+        font-weight: 300;
+        line-height: 25px;
+        font-size: 14px;
+    }
 }
 
 .flexbox {
@@ -303,20 +535,63 @@ li {
     height: 100%;
 }
 
-.left-wrapper {
+@media (max-width: 500px) {
+    .flexbox {
 
-    width: 40%;
+        display: block;
+
+    }
+
+}
+
+.left-wrapper {
+    display: block;
+    width: 30%;
     padding: 10px;
 
 
 }
 
+@media (max-width: 500px) {
+    .left-wrapper {
+        display: flex;
+        width: 100%;
+
+    
+    
+    }
+
+}
+
+@media (min-width: 900px) and (max-width: 1350px) {
+    .left-wrapper {
+
+        width: 60%;
+        padding: 10px;
+    
+    
+    }
+}
+
+
+
 .left-buttons {
     background-color: #ff000059;
-    padding: 10px;
+    padding: 15px;
     margin: 5px 0px;
     border: 1px solid red;
     border-radius: 20px;
+    width: 100%;
+
+}
+
+@media (max-width: 500px) {
+    .left-buttons {
+        padding: 5px;
+        margin: 5px 0px;
+        text-align: center;
+    
+    }
 
 }
 
@@ -332,6 +607,31 @@ li {
 
 .p-projetos {
     display: none;
+    font-size: 16px;
+}
+
+@media (max-width: 500px) {
+    .p-projetos {
+        font-size: 0px;
+        margin: 0;
+        padding: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+    .p-projetos {
+        font-size: 14px;
+    }
+}
+
+
+
+@media (min-width: 900px) and (max-width: 1350px) {
+    .p-projetos {
+        font-size: 14px;
+    }
 }
 
 .height {
@@ -347,10 +647,38 @@ li {
 
 }
 
+@media (max-width: 500px) {
+    .right-wrapper {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+    
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 1350px) {
+    .right-wrapper {
+    padding: 10px;
+    padding-top: 60px;
+    
+    }
+}
+
 .preview {
     width: 80%;
     margin-top: 20px;
 
+}
+
+@media (min-width: 900px) and (max-width: 1350px) {
+    .preview {
+        width: 100%;
+
+    
+    }
 }
 
 .setas {
@@ -372,6 +700,15 @@ li {
     cursor: pointer;
     font-family: "Orbitron", sans-serif;
     font-weight: 100;
+}
+
+@media (max-width: 900px) {
+    .arrows {
+
+        padding: 03px;
+
+    }
+
 }
 
 
