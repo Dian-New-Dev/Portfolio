@@ -19,8 +19,8 @@ const projetos = {
     elementosLink: [''],
 
     //páginas únicas:
-    paginas: ['images/previews/pag1.png', 'images/previews/pag2.png'],
-    paginasLink: ['https://dian-new-dev.github.io/LP-Inova-Solu-es-Digitais/', 'https://dian-new-dev.github.io/Personal-Project-Music-Bar-Landing-Page/'],
+    paginas: ['images/previews/pag1.png', 'images/previews/pag2.png', 'images/previews/pag3.png'],
+    paginasLink: ['https://dian-new-dev.github.io/LP-Inova-Solu-es-Digitais/', 'https://dian-new-dev.github.io/DW-Desenvolvimento-Web/' , 'https://dian-new-dev.github.io/Personal-Project-Music-Bar-Landing-Page/'],
     
     //landing pages:
     LpA: ['images/previews/template0.png', 'images/previews/template1.png', 'images/previews/template2.png', 'images/previews/template3.png', 'images/previews/template4.png', 'images/previews/template5.png', 'images/previews/template6.png'],
@@ -28,7 +28,34 @@ const projetos = {
     LpLinkA: ['https://dian-new-dev.github.io/LP-0/', 'https://dian-new-dev.github.io/LP-6/', 'https://dian-new-dev.github.io/LP-3/', 'https://dian-new-dev.github.io/LP-5/', 'https://dian-new-dev.github.io/LP-2/', 'https://dian-new-dev.github.io/LP-4/', 'https://dian-new-dev.github.io/LP-1/', ],
     LpLinkT: ['https://dian-new-dev.github.io/LPT-4/', 'https://dian-new-dev.github.io/LPT-3/', 'https://dian-new-dev.github.io/LPT-1/', 'https://dian-new-dev.github.io/LPT-2/'],
 
-}
+//     LpA: [
+//         'images/previews/template0.png',
+//         'images/previews/templateT1.png',
+//         'images/previews/template1.png',
+//         'images/previews/templateT2.png',
+//         'images/previews/template2.png',
+//         'images/previews/templateT3.png',
+//         'images/previews/template3.png',
+//         'images/previews/template4.png',
+//         'images/previews/template5.png',
+//         'images/previews/template6.png'
+//     ],
+    
+//     LpLinkA: [
+//         'https://dian-new-dev.github.io/LP-0/',
+//         'https://dian-new-dev.github.io/LPT-4/',
+//         'https://dian-new-dev.github.io/LP-6/',
+//         'https://dian-new-dev.github.io/LPT-3/',
+//         'https://dian-new-dev.github.io/LP-3/',
+//         'https://dian-new-dev.github.io/LPT-1/',
+//         'https://dian-new-dev.github.io/LP-5/',
+//         'https://dian-new-dev.github.io/LP-2/',
+//         'https://dian-new-dev.github.io/LP-4/',
+//         'https://dian-new-dev.github.io/LP-1/'
+//     ]
+// }
+
+    }
 
 const sobre = {
     h2: 'SOBRE MIM',
