@@ -125,6 +125,7 @@ header * {
 main {
     width: 70%;
     height: 100%;
+    overflow: hidden;
 }
 
 @media (max-width: 900px) {
@@ -242,20 +243,15 @@ main {
 
 
 
-.canvas {
+/* .canvas {
     position: absolute;
     top: 37%;
     left: 10%;
     width: 15%;
     height: 30%;
-    /* border: 1px solid blue; */
     z-index: 10;
 
-}
-
-.canvas:hover{
-    filter: brightness(100px);
-}
+} */
 
 .projetos {
     display: none;
